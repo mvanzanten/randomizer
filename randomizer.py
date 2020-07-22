@@ -23,19 +23,18 @@ my_color = [R, G, O, W]
 
 #print pretty title
 title= """
-  ______     _ _   ___           __
- /_  __/____(_) | / (_)___ ___  / /_  __  _______
-  / / / ___/ /  |/ / / __ `__ \/ __ \/ / / / ___/
- / / / /  / / /|  / / / / / / / /_/ / /_/ (__  )
-/_/ /_/  /_/_/ |_/_/_/ /_/ /_/_.___/\__,_/____/
-
-                                              """
+   ____        _           
+  / __ \____  (_)________ _
+ / / / / __ \/ / ___/ __ `/
+/ /_/ / / / / / /__/ /_/ / 
+\____/_/ /_/_/\___/\__,_/  
+                           """
 
 time.sleep(1)
 print(title)
 time.sleep(0.3)
 
-print 'Picking a winner',
+print('Picking a winner')
 
 while t_count <= t_loops:
     time.sleep(0.2)
@@ -43,7 +42,7 @@ while t_count <= t_loops:
     sys.stdout.flush()
     t_count = t_count + 1
 
-print '\n\n'
+print('\n\n')
 sys.stdout.flush()
 
 while counter <= spins:
@@ -56,12 +55,12 @@ while counter <= spins:
     counter = counter + increment
 sys.stdout.write(' ')
 sys.stdout.flush()
-print '\n\n'
+print('\n\n')
 
 time.sleep(0.2)
 sys.stdout.write('Our Winner is: ')
 sys.stdout.write(winner)
-print '\n'
+print ('\n')
 f = open("contestants.txt","r+")
 d = f.readlines()
 f.seek(0)
@@ -70,4 +69,4 @@ for i in d:
         f.write(i)
 f.truncate()
 f.close()
-raw_input("Press enter to exit ;)")
+input("Press enter to exit ;)")
