@@ -1,4 +1,4 @@
-## Randomizer (Ransomizer)
+## Randomizer
 
 A completely unbiased python script that will select a winner/victim from the provided contestants list **(contestants.txt)** This file is just an example.
  
